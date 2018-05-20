@@ -10,7 +10,7 @@ import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl'
 class App extends Component {
   render() {
     return (
-      <div style={{height: '300px', position: 'relative'}}>
+      <div style={{height: '100vh', position: 'relative'}}>
         <Layout fixedHeader>
             <Header title={<span><span style={{ color: '#ddd' }}>Area / </span><strong>The Title</strong></span>}>
                 <Navigation>
