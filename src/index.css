@@ -5,9 +5,9 @@ body {
 }
 
 .header-color{
-  background: #C33764;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #3494E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .mdl-layout__header .mdl-layout__drawer-button {
@@ -15,9 +15,10 @@ body {
 }
 
 .landing-grid{
-  background: #C33764;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #3494E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   text-align: center;
   position: fixed;
   top: 0;
@@ -29,7 +30,8 @@ body {
 
 .avatar-image{
   height: 250px;
-  padding-top: 5em;
+  padding-top: 10em;
+  padding-bottom: 2em;
 }
 
 .banner-text{
@@ -66,7 +68,30 @@ body {
 
 .social-links i{
   color: white;
-  font-size: 5em;
-  padding: 8px;
+  font-size: 3em;
+  padding: 12px;
 
+}
+
+.projects-grid{
+  display: flex;
+
+}
+
+.grid-container{
+
+}
+
+@media (max-width: 768px) {
+  .banner-text h1{
+    font-size: 32px;
+  }
+
+  .banner-text p{
+    font-size: 12px;
+  }
+
+  .social-links i{
+    font-size: 2em;
+  }
 }

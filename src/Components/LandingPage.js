@@ -10,7 +10,7 @@ class LandingPage extends Component{
 				<Grid className="landing-grid">
 					<Cell col={12}>
 					 <img 
-						 src="https://avatars2.githubusercontent.com/u/21251695?s=400&u=6739981fe71f78d472943e64e243f6cc95a85e3f&v=4"
+						 src={require('../Avatar.png')}
 						 alt="avatar"
 						 className="avatar-image"
 					 />
