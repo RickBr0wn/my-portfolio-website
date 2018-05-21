@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div style={{height: '100vh', position: 'relative'}}>
         <Layout fixedHeader>
-            <Header title={<span><span style={{ color: '#ddd' }}>Rick</span><strong>Brown</strong></span>}>
+            <Header className="header-color" title={<span><span style={{ color: '#ddd' }}>Rick</span><strong>Brown</strong></span>}>
                 <Navigation>
                     <Link to="/aboutme"><strong>About Me</strong></Link>
                     <Link to="/projects"><strong>Projects</strong></Link>
