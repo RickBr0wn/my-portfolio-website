@@ -7,26 +7,27 @@ import 'react-mdl/extra/material.js'
 // Compnents
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl'
 import Main from './Components/Main'
+import { Link } from 'react-router-dom'
 
 class App extends Component {
   render() {
     return (
       <div style={{height: '100vh', position: 'relative'}}>
         <Layout fixedHeader>
-            <Header title={<span><span style={{ color: '#ddd' }}>Area / </span><strong>The Title</strong></span>}>
+            <Header title={<span><span style={{ color: '#ddd' }}>Rick</span><strong>Brown</strong></span>}>
                 <Navigation>
-                    <a href="/">Link</a>
-                    <a href="/">Link</a>
-                    <a href="/">Link</a>
-                    <a href="/">Link</a>
+                    <Link to="/aboutme"><strong>About Me</strong></Link>
+                    <Link to="/projects"><strong>Projects</strong></Link>
+                    <Link to="/resume"><strong>Resume</strong></Link>
+                    <Link to="/contact"><strong>Contact Me</strong></Link>
                 </Navigation>
             </Header>
             <Drawer title="Title">
                 <Navigation>
-                    <a href="/">Link</a>
-                    <a href="/">Link</a>
-                    <a href="/">Link</a>
-                    <a href="/">Link</a>
+                    <Link to="/aboutme"><strong>About Me</strong></Link>
+                    <Link to="/projects"><strong>Projects</strong></Link>
+                    <Link to="/resume"><strong>Resume</strong></Link>
+                    <Link to="/contact"><strong>Contact Me</strong></Link>
                 </Navigation>
             </Drawer>
             <Content>
