@@ -16,6 +16,7 @@ class App extends Component {
         <Layout fixedHeader>
             <Header className="header-color" title={<span><span style={{ color: '#ddd' }}>Rick</span><strong>Brown</strong></span>}>
                 <Navigation>
+                    <Link to="/"><strong>Home</strong></Link>
                     <Link to="/aboutme"><strong>About Me</strong></Link>
                     <Link to="/projects"><strong>Projects</strong></Link>
                     <Link to="/resume"><strong>Resume</strong></Link>
@@ -24,6 +25,7 @@ class App extends Component {
             </Header>
             <Drawer title="Title">
                 <Navigation>
+                    <Link to="/"><strong>Home</strong></Link>
                     <Link to="/aboutme"><strong>About Me</strong></Link>
                     <Link to="/projects"><strong>Projects</strong></Link>
                     <Link to="/resume"><strong>Resume</strong></Link>
