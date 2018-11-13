@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,400,500,700');
 
 *,
 *::before,
@@ -49,4 +49,27 @@ body {
 .navbar ul a {
   text-decoration: none;
   color: white;
+}
+
+.hero-image {
+  background: #2E3251;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+  font-weight: 200;
+  color: #ECEFF1;
+  font-size: 8.4rem;
+}
+
+.hero-text h3 {
+  font-weight: 200;
+  color: #ECEFF1;
+  font-size: 4.2rem;
 }
