@@ -22,3 +22,31 @@ body {
   font-size: 1.6rem;
   background-color: #ECEFF1;
 }
+
+.navbar {
+  display: flex;
+  flex-direction: row-reverse;
+  background: #4b6cb7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #4b6cb7, #182848); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #4b6cb7, #182848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.link-container {
+  width: 40%;
+}
+
+.navbar ul {
+  display: flex;
+  height: 100%;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  color: white;
+}
