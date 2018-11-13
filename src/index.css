@@ -57,13 +57,14 @@ body {
 
 .hero-text {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .hero-text h1 {
-  font-weight: 200;
+  font-weight: 400;
   color: #ECEFF1;
   font-size: 8.4rem;
 }
@@ -72,4 +73,10 @@ body {
   font-weight: 200;
   color: #ECEFF1;
   font-size: 4.2rem;
+}
+
+.hero-social-icons i {
+  color: #ECEFF1;
+  font-size: 1.6rem;
+  margin: 1.2rem 0.8rem;
 }
