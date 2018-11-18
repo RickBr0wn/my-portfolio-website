@@ -7,7 +7,6 @@ const Navbar = () => {
     <div className="navbar">
       <div className="link-container">
         <ul>
-          <li><Link to={routes.HOME_PAGE}>Home</Link></li>
           <li><Link to={routes.ABOUT_PAGE}>About Me</Link></li>
           <li><Link to={routes.PROJECTS_PAGE}>My Projects</Link></li>
           <li><Link to={routes.CONTACT_PAGE}>Contact Me</Link></li>

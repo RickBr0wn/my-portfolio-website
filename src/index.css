@@ -52,31 +52,86 @@ body {
 }
 
 .hero-image {
-  background: #2E3251;
+  background: url('https://us.123rf.com/450wm/gonin/gonin1706/gonin170600003/79708285-blue-frame-of-sci-fi-network-shape-computer-generated-abstract-background-with-free-space.jpg?ver=6');
+  background-size: cover;
+  height: 100vh;
 }
 
 .hero-text {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
 .hero-text h1 {
-  font-weight: 400;
+  font-weight: 200;
   color: #ECEFF1;
-  font-size: 8.4rem;
+  font-size: 6.8rem;
 }
 
 .hero-text h3 {
   font-weight: 200;
   color: #ECEFF1;
-  font-size: 4.2rem;
+  font-size: 2.8rem;
 }
 
 .hero-social-icons i {
   color: #ECEFF1;
-  font-size: 1.6rem;
-  margin: 1.2rem 0.8rem;
+  font-size: 2.2rem;
+  margin: 2.4rem 1.2rem;
+}
+
+canvas {
+  height: 100vh;
+}
+
+.btn-hero {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.6rem 1.4rem;
+  font-weight: 100;
+  font-size: 1.8rem;
+}
+
+.pulse {
+  animation: pulse 3s infinite;
+  margin: 0 auto;
+  display: table;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.filter {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
