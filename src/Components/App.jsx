@@ -7,6 +7,7 @@ import About from './About'
 import Projects from './Projects'
 import Contact from './Contact'
 import Resume from './Resume'
+import CardComponent from './CardComponent/CardComponent'
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
                   <Route path={routes.PROJECTS_PAGE} component={Projects} />
                   <Route path={routes.CONTACT_PAGE} component={Contact} />
                   <Route path={routes.RESUME_PAGE} component={Resume} />    
+                  <Route path={routes.CARD_COMPONENT} component={CardComponent} />    
                 </Switch>
             </div>
           )} />
