@@ -22,13 +22,6 @@ const Home = ({history}) =>
           <i className="fab fa-twitter"></i>
         </div>
         <button onClick={() => history.push(ABOUT_PAGE)} className="btn-hero pulse">View My Work</button>
-        <ContextProvider>
-        <Context.Consumer>
-          {context => (
-            <div>{context.particleParams.particles.number.value}</div>
-          )}
-        </Context.Consumer>
-      </ContextProvider>
       </div>
     </div>
   </div>
