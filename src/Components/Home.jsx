@@ -1,20 +1,34 @@
 import React from 'react'
 import Particles from 'react-particles-js'
-import { params } from './HomePageComponents/ParticlesParams'
 import { ABOUT_PAGE } from '../Constants/routes'
+import Context from '../Store/Context'
+import ContextProvider from '../Store/ContextProvider'
 
 const Home = ({history}) => 
   <div className="hero-image">
     <div className="filter">
-      <Particles params={params} height="100" />
+      <ContextProvider>
+        <Context.Consumer>
+          {context => (
+            <Particles params={context.particleParams} height="100" />
+          )}
+        </Context.Consumer>
+      </ContextProvider>
       <div className="hero-text">
         <h1>Rick Brown</h1>
         <h3>Web Developer</h3>
         <div className="hero-social-icons">
-          <i class="fab fa-github"></i>
-          <i class="fab fa-twitter"></i>
+          <i className="fab fa-github"></i>
+          <i className="fab fa-twitter"></i>
         </div>
         <button onClick={() => history.push(ABOUT_PAGE)} className="btn-hero pulse">View My Work</button>
+        <ContextProvider>
+        <Context.Consumer>
+          {context => (
+            <div>{context.particleParams.particles.number.value}</div>
+          )}
+        </Context.Consumer>
+      </ContextProvider>
       </div>
     </div>
   </div>

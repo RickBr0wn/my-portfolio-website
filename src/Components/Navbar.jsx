@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import * as routes from '../Constants/routes'
 
 const Navbar = () => {
+  console.log('navbar')
   return (
     <div className="navbar">
       <div className="link-container">

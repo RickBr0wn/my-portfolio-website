@@ -14,7 +14,7 @@ const CardComponent = () => {
           <div className="card-header-logo">DEV</div>
           <div className="card-header-info">
             <p><strong>The Practical Dev</strong>
-              <span className="muted-text"> @ThePraticalDev . Sept 10</span>
+              <span className="muted-text"> @ThePraticalDev - Sept 10</span>
             </p>
             <p>Learning React? Start small.</p>
             <p>{symbols.openBracket} author: 
